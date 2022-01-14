@@ -52,15 +52,14 @@ from lsst.utils import doImport
 from lsst.utils.timer import time_this
 
 from . import BPS_DEFAULTS, BPS_SEARCH_ORDER, BpsConfig
-from .pre_transform import acquire_quantum_graph, cluster_quanta
-from .transform import transform
-from .prepare import prepare
-from .submit import submit
+from .bps_utils import _dump_env_info, _dump_pkg_info
 from .cancel import cancel
+from .pre_transform import acquire_quantum_graph, cluster_quanta
+from .prepare import prepare
 from .report import report
 from .restart import restart
-from .bps_utils import _dump_env_info, _dump_pkg_info
-
+from .submit import submit
+from .transform import transform
 
 _LOG = logging.getLogger(__name__)
 

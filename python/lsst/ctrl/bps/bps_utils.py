@@ -44,9 +44,7 @@ from enum import Enum
 from pathlib import Path
 
 import yaml
-
 from lsst.base import Packages
-
 
 _LOG = logging.getLogger(__name__)
 
